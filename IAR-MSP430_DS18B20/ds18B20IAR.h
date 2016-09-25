@@ -10,8 +10,8 @@
 
 #include "io430.h"
 
-union reg {										// define one byte with 8 bits 
-    struct bit {								// define bit on byte  
+union reg {										        // define one byte with 8 bits 
+    struct bit {								      // define bit on byte  
           unsigned char b0:1;					// the first bit on byte
           unsigned char b1:1;					// the second bit on byte 
           unsigned char b2:1;					// the third bit on byte
@@ -21,13 +21,13 @@ union reg {										// define one byte with 8 bits
           unsigned char b6:1;					// the seventh bit on byte
           unsigned char b7:1;					// the eighth bit on byte 
               }_BIT;
-    unsigned char _BYTE;						// Name of byte
+    unsigned char _BYTE;						  // Name of byte
 };
 
 // The digital I/O registers 
 union reg* _P2_DIRECT = (union reg*)0x2A ;		// P2-Direction Register _ address : 0x2Ah , name = _P2_DIRECT
 union reg* _P2_OUT    = (union reg*)0x29 ;		// P2-Output Register    _ address : 0x29h , name = _P2_OUT
-union reg* _P2_IN     = (union reg*)0x28 ;		// P2-Input Register 	 _ address : 0x28h , name = _P2_IN
+union reg* _P2_IN     = (union reg*)0x28 ;		// P2-Input Register 	   _ address : 0x28h , name = _P2_IN
 
 #define     DQIN        (_P2_IN  -> _BIT.b2)
 #define     DQOUT       (_P2_OUT -> _BIT.b2)
