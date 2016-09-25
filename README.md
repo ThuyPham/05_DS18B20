@@ -9,6 +9,5 @@ One-Wire technology - DS18B20 temperature sensor
 		- 1 điện trở R = 4.7K nối giữa VDD và DQ của DS18B20. 
 	- File ds18B20IAR.h	  : là file chứa các hàm chức năng giúp làm việc với cảm biến DS18B20 One-Wire bus. 
 	- File UART.h		  : là file giúp MSP430 giao tiếp với các phần mềm giao tiếp cổng COM.
-	- File ex1ReadTemperature.c : là ví dụ cơ bản - đọc giá trị nhiệt độ của một cảm biến khi trên One-Wire bus có một cảm biến 					DS18B20.
-	DS18B20 One-Wire bus 
+	- File ex1ReadTemperature.c : là ví dụ cơ bản - đọc giá trị nhiệt độ của một cảm biến khi trên One-Wire bus có một cảm 						biến DS18B20. 
 	- API đang trong quá trình hoàn thiện thêm các chức năng. 
