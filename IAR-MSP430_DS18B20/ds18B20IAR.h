@@ -10,8 +10,8 @@
 
 #include "io430.h"
 
-union reg {										        // define one byte with 8 bits 
-    struct bit {								      // define bit on byte  
+union reg {	                          // define one byte with 8 bits 
+    struct bit {                      // define bit on byte  
           unsigned char b0:1;					// the first bit on byte
           unsigned char b1:1;					// the second bit on byte 
           unsigned char b2:1;					// the third bit on byte
@@ -21,7 +21,7 @@ union reg {										        // define one byte with 8 bits
           unsigned char b6:1;					// the seventh bit on byte
           unsigned char b7:1;					// the eighth bit on byte 
               }_BIT;
-    unsigned char _BYTE;						  // Name of byte
+    unsigned char _BYTE;              // Name of byte
 };
 
 // The digital I/O registers 
